@@ -1,0 +1,9 @@
+﻿
+如果在部署网站的时候提示handles 或是 modules异常，可以运行下面的方式解除
+
+
+命令管理员：
+
+%windir%\system32\inetsrv\appcmd unlock config -section:system.webServer/handlers
+
+%windir%\system32\inetsrv\appcmd unlock config -section:system.webServer/modules
